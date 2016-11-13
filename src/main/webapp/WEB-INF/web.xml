@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+    <servlet-name>JDBCServlet</servlet-name>
+    <servlet-class>net.danielmaly.mdw.hw4.servlet.JDBCServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>JDBCServlet</servlet-name>
+    <url-pattern>/jdbc</url-pattern>
+  </servlet-mapping>
 </web-app>

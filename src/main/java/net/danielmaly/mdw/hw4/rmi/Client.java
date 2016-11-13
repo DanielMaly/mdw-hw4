@@ -8,15 +8,15 @@ public class Client {
     public static void main(String[] args) throws Exception{
         Converter client = (Converter)Naming.lookup("//localhost/convert");
 
-        Scanner in = new Scanner(System.in);//stdin
+        Scanner in = new Scanner(System.in);
 
-        System.out.println("Enter from currency [USD, GBP, EUR]: ");
+        System.out.print("Enter from currency [USD, GBP, EUR]: ");
         String from = in.nextLine();
 
-        System.out.println("Enter to currency [USD, GBP, EUR]: ");
+        System.out.print("Enter to currency [USD, GBP, EUR]: ");
         String to = in.nextLine();
 
-        System.out.println("Enter amount [double]: ");
+        System.out.print("Enter amount [double]: ");
         Double amount = in.nextDouble();
 
         Double converted = client.convert(from, to, amount);
